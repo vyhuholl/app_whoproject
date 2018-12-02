@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<style>
+	* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 80%;
+  background-color: 9bded5;
+}
+
+.right {
+  width: 20%;
+  background-color: 66ffb3;
+}
+
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+		img.big {
+	cursor: pointer;
+	max-height: 200px;
+    border-radius: 20%;
+    margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+		img.big:hover {
+			max-height: none;
+		}
+		input {
+			border-radius: 20%;
+			background-color: 9bded5;
+			margin-left: 10px;
+			margin-right: 10px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+}
+	</style>
+	<title>Who project</title>
+</head>
+<body bgcolor="9bded5" leftmargin = "100" rightmargin = "100" topmargin = "100" bottommargin = "100" padding = "25">
+	<div class="row">
+		<div class="column left">
+			<img class = "big" src="https://github.com/vyhuholl/app/blob/master/imgs/1.jpg?raw=true" alt="1"> 
+			<img class = "big" src="https://github.com/vyhuholl/app/blob/master/imgs/2.jpg?raw=true" alt="2"> 
+			<img class = "big" src="https://github.com/vyhuholl/app/blob/master/imgs/3.jpg?raw=true" alt="3"> 
+			<img class = "big" src="https://github.com/vyhuholl/app/blob/master/imgs/4.jpg?raw=true" alt="4"> 
+			<img class = "big" src="https://github.com/vyhuholl/app/blob/master/imgs/5.jpg?raw=true" alt="5"> 
+			<img class = "big" src="https://github.com/vyhuholl/app/blob/master/imgs/6.jpg?raw=true" alt="6"> 
+			<img class = "big" src="https://github.com/vyhuholl/app/blob/master/imgs/7.jpg?raw=true" alt="7"> 
+			<img class = "big" src="https://github.com/vyhuholl/app/blob/master/imgs/8.jpg?raw=true" alt="8"> 
+			<img class = "big" src="https://github.com/vyhuholl/app/blob/master/imgs/9.jpg?raw=true" alt="9"> 
+		</div>
+		<div class="column right">
+			<span style="font-family: Arial, Helvetica, sans-serif;  margin-bottom: : 25px">
+				<form class="form-inline" method="get" action = "/results">
+					Вопросы: <br>
+					1) кто я <br>
+					2) какой я <br>
+					3) чего во мне нет <br>
+					4) что во мне самое важное <br>
+					5) на кого я похож<br> / кем бы я хотел, чтобы меня видели <br>
+					<br>
+					Расставьте номера картинок по местам:<br>
+					<br>
+					<div class="form-group">
+						<label for="question_1">1) мечтатель <br> 2) творческий <br>  3) рациональность <br> 4) все вместе сразу <br> 5) на героя из фантастических книг <br></label>
+						<input class = "input" type="text" name="question_1">
+					</div>
+					<div class="form-group">
+						<label for="question_2">1) странник бытия <br> 2) ищущий <br> 3) радости <br> 4) интерес <br> 5) скитальца <br></label>
+						<input class = "input" type="text" name="question_2">
+					</div>
+					<div class="form-group">
+						<label for="question_3">1) я Человек <br> 2) простой <br> 3) удачливости <br> 4) справедливость <br> 5) на папу <br></label>
+						<input class = "input" type="text" name="question_3">
+					</div>
+					<div class="form-group">
+						<label for="question_4">1) mobile программист <br> 2) нервный, добрый, легкий <br> 3) желания соревноваться <br> 4) результативность <br> 5) на Ленина <br></label>
+					<input class = "input" type="text" name="question_4"></div>
+					<p><input type="submit" value = "Отправить" style = ""></p>
+				</form>
+			</span>
+		</div>
+	</div>
+</body>
+</html>
